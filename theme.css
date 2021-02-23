@@ -12,6 +12,10 @@ html{
     
 
 }
+menu a {
+    text-decoration: none;
+    color: white
+}
 
 menu{
     background-color: rgb(78, 59, 52);
@@ -26,6 +30,7 @@ menu{
 
 .social ul{
     list-style-type: none;
+    text-align: left;
 }
 
 menu ul{
@@ -104,14 +109,14 @@ a{
     position:relative;
     text-decoration-line: underline;
     text-decoration-style: solid;
-    text-decoration-color: gold;
+    text-decoration-color: goldenrod;
     text-decoration-thickness: 0.2rem;
     text-underline-offset: 0px;}
 .mur{
     background-color: whitesmoke;
 }
 .rond{
-    background-color: gold;
+    background-color: goldenrod;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -124,7 +129,7 @@ a span
   display:none;
   border-style:solid;
     border-width: 2px;
-  border-color: gold;
+  border-color: goldenrod;
   width: 300px;
   background:white; 
   font-family: 'Palanquin', sans-serif;
@@ -132,7 +137,8 @@ a span
   text-align: justify;
   text-justify: auto;
   text-indent: 10%;
-}
+
+  }
  
 
 section:hover img{
@@ -166,4 +172,37 @@ a:hover span
     
 }
 
-
+@media  screen and (max-width : 920px) {
+    menu{
+        position: relative;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+    }
+    .social{
+        width: 100%;
+        position: relative;
+        left: 0%;
+        top: 0%;
+        
+    }
+    .social ul{
+       
+        width: 100%;
+    }
+    .social li{
+        text-align: center;
+        display: inline-block;
+        width: 30%;
+    }
+    
+    menu ul{
+        text-align: center;
+    
+    }.mur{
+     
+        margin: 0%;
+     
+  
+    }
+}
